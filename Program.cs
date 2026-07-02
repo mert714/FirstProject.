@@ -26,7 +26,31 @@ namespace FirstProject
 
                 string choice = Console.ReadLine();
                 Console.WriteLine();
-                break;
+                switch(choice)
+                {
+                    case "1":
+                        //1. CREATE
+
+
+                        Console.Write("Въведете име: ");
+                        string name = Console.ReadLine();
+
+                        Console.Write("Въведете възраст:");
+                        int age = int.Parse(Console.ReadLine());
+
+                        Console.Write("Въведете заплата: ");
+                        double salary = double.Parse(Console.ReadLine());
+
+                        Person newPerson = new Person(name, age, salary);
+                        people.Add(newPerson);
+
+                        SavePeopleToFile(people);
+                        Console.WriteLine("Успешно добавен нов запис!");
+                        Console.WriteLine();
+                        break;
+
+
+                }
             }
         }
         static List<Person> LoadPeopleFromFile()

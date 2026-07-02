@@ -49,7 +49,31 @@ namespace FirstProject
                         Console.WriteLine();
                         break;
 
+                    case "2":
+                        //2.READ
 
+                        Console.WriteLine("---Списък с хора---");
+                        if(people.Count == 0)
+                        {
+                            Console.WriteLine("Списъка с хора е празен(няма записи във файла).");
+                        }
+                        else
+                        {
+                            foreach (Person p in people)
+                            {
+                                Console.WriteLine(p);
+                            }
+                        }
+                        Console.WriteLine();
+                        break;
+                    case "3":
+                        break;
+
+                   
+                        
+                        
+                        
+                                
                 }
             }
         }

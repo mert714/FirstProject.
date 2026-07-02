@@ -70,8 +70,15 @@ namespace FirstProject
                         break;
                     case "4":
                         break;
+                    case "5":
+                        running = false;
+                        Console.WriteLine("Изход на програмата");
+                        break;
 
-                    
+                    default:
+                        Console.WriteLine("Невалиден избор. Моля, опитайте отново");
+
+                        break;
 
 
 
